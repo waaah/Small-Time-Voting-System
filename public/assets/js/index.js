@@ -20,10 +20,40 @@ voterButton.addEventListener('click', function(){
             text:"Do you wish to register as a voter?",
             showCancelButton:true,
             preConfirm: ()=> {
-                
+                return new Promise((resolve) => {
+                    $.ajax({
+                        url:"/voter/save",
+                        data:JSON.stringify({
+                            firstname: $("#firstname").val(),
+                            lastname: $("#lastname").val(),
+                            email: $("#email").val()
+                        }),
+                        contentType: 'application/json',
+                        method:"POST",
+                        error: function(err){
+                            console.log(err);
+                        }
+                    })
+                    .done(function(data){
+                        if(data.success)
+                            console.log('Data saved');
+                        else
+                            console.log('Saved failed');
+                        resolve();
+                    })
+                })
             },
             showLoaderOnConfirm:true,
             allowOutsideClick: () => !swal.isLoading()
+        }).then(function(){
+            swal({
+                title:"Voter Registered!",
+                text:"Go to the voting page!",
+                type:"success",
+                allowOutsideClick:false
+            }).then( () => {
+                window.location.href = '/vote'
+            })
         })
     }
     else if(!errorDefined){
