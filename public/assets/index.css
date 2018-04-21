@@ -29,13 +29,23 @@ section.main > .flex-container >.slogan{
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
-    flex-flow:row wrap;
-    -webkit-flex-flow:row wrap;
-    justify-content: space-around;
+    flex-flow:column;
+    -webkit-flex-flow:column;
+    align-items: center;
+    justify-content: center;
 }
-@media screen and (max-width: 500px){
-    .flex-container{
-        width: 400px;
+@media screen and (max-width: 520px){
+    .form{
+        width: 300px !important;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .form{
+        margin: 0 !important;
+    }
+    .slogan{
+        padding: 0; 
     }
 }
 .form{
@@ -100,4 +110,8 @@ button:focus{
 .form-header{
     font-size: 45px;
     padding: 0px 20px 20px 20px;
+}
+.error{
+    color:red;
+    font-weight: bolder;
 }

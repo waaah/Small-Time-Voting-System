@@ -1,12 +1,32 @@
-{
-    "0":{
-        "name": "Miriam Defensor Santiago",
-        "quote":"Somehtnasdaassszc",
-        "vote-count":{
-            
-        }
+[
+    {
+        "name":"Miriam Defensor Santiago",
+        "quote":"",
+        "image":"/assets/images/candidates/santiago.jpg",
+        "vote-count":20
     },
-    "1":{
-        
+    {
+        "name":"Rodrigo Duterte",
+        "quote":"",
+        "image":"/assets/images/candidates/duterte.jpg",
+        "vote-count":20
+    },
+    {
+        "name":"Mar Roxas",
+        "quote":"",
+        "image":"/assets/images/candidates/roxas.jpg",
+        "vote-count":20
+    },
+    {
+        "name":"Grace Poe",
+        "quote":"",
+        "image":"/assets/images/candidates/poe.jpg",
+        "vote-count":20
+    },
+    {
+        "name":"Jejomar Binay",
+        "quote":"",
+        "image":"/assets/images/candidates/binay.jpg",
+        "vote-count":20
     }
-}
+]

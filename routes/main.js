@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
-
+let fs = require('fs');
+var candidates = require('../config/data.json')
 router.get('/', function(req,res){
     res.render('index');
 });
