@@ -9,6 +9,10 @@ router.get('/vote', function(req,res){
     res.render('vote');
 });
 
+router.get('/vote/save', function(req,res){
+    res.render('vote');
+});
+
 router.get('/table', function(req,res){
     res.render('table');
 });
