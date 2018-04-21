@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const path = require('path');
 
 //use static first before doing any configuring of routers.
-app.use(express.static(path.join(__dirname, 'views')));
+app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'ejs');
 
 //express routers.

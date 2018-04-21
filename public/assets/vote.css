@@ -1,0 +1,71 @@
+
+.container{
+    height:100vh;
+}
+.container > .top{
+    height: 30vh;
+    background: #ee6e73;
+}
+.top > h1{
+    text-align: center;
+    font-weight: 900;
+    margin: 0 auto;
+    color:white;
+    font-size:30px;
+    height: inherit;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+}
+.content {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    word-wrap: break-word;
+    background: #eaeaea;
+}
+.card{
+    max-height: 400px;
+    height: 100%;   
+    width: 300px;
+    margin: 20px;
+    box-shadow: 0px 0px 2px black;
+    transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);   
+    text-align: center; 
+    background: #fff;
+}
+
+.card:hover{
+    box-shadow: 0px 0px 8px black;
+}
+
+button{
+    width: 100%;
+    border:none;
+    outline:none;
+    padding: 20px;
+    font-size: 15px;
+    color:white;
+    font-weight: bold;
+    background: #EE6E73;
+}
+button:hover{
+    background: rgb(201, 101, 104);
+}
+.candidate-photo{
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    border-radius: 50%;
+}
+.text-container{
+    font-size:14px;
+    padding: 20px;
+    text-align: justify;   
+    display: relative;
+    line-height: 13px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

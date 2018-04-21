@@ -1,0 +1,103 @@
+
+section.main{
+    background: url("/images/bg-election.jpg") no-repeat;
+    height:720px;
+    background-size: cover;
+    background-position: center center;
+}
+section.main > .flex-container >.slogan{
+    
+    color:white;
+    padding:20px;
+    text-align:center;
+    margin: auto;
+    
+}
+.slogan > h1{
+    font-size: 50px;
+    font-weight: 800;
+    
+}
+.slogan > p{
+    font-style: italic;
+    font-size:20px;
+}
+/* Flex Container */
+.flex-container{
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-flow:row wrap;
+    -webkit-flex-flow:row wrap;
+    justify-content: space-around;
+}
+@media screen and (max-width: 500px){
+    .flex-container{
+        width: 400px;
+    }
+}
+.form{
+    width: 420px;
+    background:#f9f9f9ea;
+    padding:30px;
+    margin:20px;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    /* box-shadow: 0px 0px 28px rgba(0,0,0,.3);
+    -moz-box-shadow: 0px 0px 28px rgba(0,0,0,.3);
+    -webkit-box-shadow: 0px 0px 28px rgba(0,0,0,.3); */
+}
+.form > *{
+    display: block;
+    font-size: 20px;
+}
+h1{
+    text-align:center;
+}
+.input-text{
+    outline:none;
+    outline: none;
+    /* margin: 20px; */
+    /* text-align: left; */
+    width: 100%;
+    background: #f5f5f5;
+    border: none;
+    margin-top:10px;
+    font-weight: bold;
+    padding: 10px;
+    color: #b9b6b6;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+.input-text:focus{
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 1px solid rgba(81, 203, 238, 1);
+}
+button{
+    width:100%;
+    outline: none;
+    background: rgba(81, 203, 238, 1);
+    border:none;
+    padding: 10px;
+    margin-top: 10px;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    color:white;
+}
+button:hover{
+    background: rgba(61, 153, 208, 1);
+}
+button:focus{
+    background: rgba(61, 153, 208, 1);
+}
+.form-header{
+    font-size: 45px;
+    padding: 0px 20px 20px 20px;
+}

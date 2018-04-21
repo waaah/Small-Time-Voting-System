@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app --ignore package.json"
+    "start": "nodemon app --ignore package.json --include ejs"
   },
   "author": "Joshua Simangan Co",
   "license": "ISC",
